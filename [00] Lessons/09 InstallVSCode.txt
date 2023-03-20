@@ -1,0 +1,27 @@
+git branch new
+git branch
+git checkout new
+cat .git/HEAD
+ls
+nano README.md
+git status
+git add . => (1)
+git ls-files -s
+git status
+git commit -m "Modified" => (2)
+git status
+git log
+
+git diff 
+	1. a represent the previous version of the file
+	2. b represent modified file
+	3. index is SHA1 hash of those files & file permissions 
+	4. Indicate start of changed section
+		a. Number of line in old file, 
+		b. Quantity of line that are printed here in this Sec,
+		c. Number of line in new file, 
+		d. Total quantity of lines that are included in this Sec from new
+
+ (1) + (2) = git commit -m "Massage" -a
+
+No: until now, U're commit is only local and not added to remote repository

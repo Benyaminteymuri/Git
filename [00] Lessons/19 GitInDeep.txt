@@ -1,0 +1,23 @@
+Git clone
+Git checkout -b <branch name>
+Touch file.txt
+Git add -a
+Git commit - m "MSG"
+
+Git push -u master <branch name>
+NO: Squash and merge
+Git checkout master
+Git pull 
+Git lg
+Git branch -d <branch name>
+
+We need the specify last hash commit!
+Git rebase -i <SHA1 hash>
+replaced pick with s using i in nano!
+:wq
+:wq
+git lg
+
+Error 403!
+git config credential.helper ""
+git push -u master main

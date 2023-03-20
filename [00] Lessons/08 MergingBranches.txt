@@ -1,0 +1,58 @@
+Merging Process:
+	1. Create new feature branch from the main branch
+	2. make changes in the new branch and commit them
+	3. Checkout main branch (receiving branch)
+	4. Merge feature branch to the current receiving branch
+	
+		a. git merge <other feature branch>
+
+Two way for merging:
+	1. Fast-forward merge
+		a. Possible when no more commits in the receiving branch 
+		b. after the commit where feature branch was created
+		c. Just move the pointer in this situation
+		d. Then U can delete feature1 branch!
+		
+
+	
+	1. 3-way merge:
+
+Install sourcetree
+
+Merge conflict! why and how it be solved using VSCode!
+
+git ls-files -s
+3 version of same file: 1) ancestor 2) master version 3) BR-3 Version
+cat file7.txt
+
+git commit
+
+NO => Git pull commands works only for specific branch and U need to check out specific branch first, and after that pull changes for this specific branch and it included two git fetch + git merge commands
+
+NO => HEAD is only one but U may have multiple branches
+
+Two way to reach the SHA1 of Second commit:
+1. GitHub desktop
+2. Command Prompt:
+	cat .git/HEAD
+	cat .git/refs/heads/master
+	git cat-files -p <hash>
+3. git log
+NO => Parent for third commit is second commit!
+
+git checkout <hash>
+NO => detached HEAD:
+1. When Head points to specific commit not to specific branch
+2. checkout  doesn't do anything with branches!
+3. It just moves head pointer and or perspective, nothing else!
+
+Using Download zip in GitHub don't bring .git file
+gt clone <url>
+
+explore .
+
+Unpacking .pack file:
+	1. Move .pack out of "pack" folder
+	2. Use "git unpack-objects" command
+		a. cat <filename> | git unpack-objects
+	3. rm -f <filename>

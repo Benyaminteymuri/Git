@@ -1,0 +1,43 @@
+Directory Management Commands 
+
+mkdir <new-folder>
+
+ls <>
+ls -l <>
+ls -la <>
+
+cd <Desktop>
+cd .
+cd ..
+cd 
+
+pwd
+
+clear
+
+open .
+explore .
+
+- File Management Commands 
+
+touch  <file.extention>
+echo  <Hello World>
+echo  <Hello World> > text.txt
+echo  <Hello World> >> text.txt
+
+cat text.txt
+
+nano => ctrl + o & ctrl + x
+vim
+vscode
+gedit
+
+clear
+
+Tab bottom
+
+man <command>
+<command>  --help
+
+rm <directory OR file>
+rm -rf <Folder>

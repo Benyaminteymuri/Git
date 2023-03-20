@@ -1,0 +1,29 @@
+It is a proposal of the potential changes
+
+NO => pull request is not equal to git pull commands
+
+Developer communicate to each other and ask each other to pull update from remote server and verify specific feature and its equal to merge request actually.
+
+changed the author in Git log
+================
+git config --list
+git config user.name "BEN"
+git config user.email "BEN"
+
+git commit --amend --author="Mike Githubber <mike githubber@gmail.com>" 
+
+:wq
+
+git log
+
+Pull Request
+================
+git remote
+git remote -v
+git push
+git push -u master feature1
+
+git branch -vv
+
+pull req massage: [feature1] first feature was implemented
+In the description you should summarized your changes

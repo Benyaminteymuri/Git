@@ -1,0 +1,49 @@
+git remote
+git remote -v
+git remote show master
+
+git branch
+git branch -a 
+both remote and local branches
+git branch -r 
+only remote branches
+
+Tracking branch is local one in local git repository that is connected to specific remote branch is remote git repository
+
+git branch -vv 
+info about remote tracking branch
+
+git fetch 
+able to fetch remote changes & Download them into your local repository
+
+git checkout temp
+creating track branch for remote dir in local dir
+
+git remote prune master
+Removing the branch on local dir which is already deleted in remote dir
+
+git checkout master 
+git branch -d temp
+
+git branch -a
+git branch -r
+git branch -vv
+git remote show master
+git fetch -v
+ls -la .git/objects/d0
+NO => after "git fetch" local Git has created remote commit object in the local Git repository, but we have not yet merged this commit into the local branch
+git cat-file -p d07324
+Git fetch downloads all new Git objects were created in tracking remote branches in the remote repository and re-creates them in the local Git repository. 
++
+git merge FETCH_HEAD
+git pull
+=
+git pull -v
+git checkout master 
+git pull -v
+cd .git
+ls -la
+cat .git/FETCH_HEAD
+cd ..
+git ls-files -s
+git log

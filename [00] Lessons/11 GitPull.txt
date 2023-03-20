@@ -1,0 +1,16 @@
+1. Checkout local branch and make sure it is tracking branch and has corresponding remote branch. Use 
+	git branch -vv for check
+	
+	2. Enter 
+	git pull
+	
+	3. Git will Fetch all changes from remote repository
+	git fetch
+	4. is executed in background
+	
+	5. After fetching Git updates FETCH_HEAD file that contains SHA1 hashes of last commits in remote repository for all tracking branches
+	
+	6. Git merges remote branch into current branch
+	git merge FETCH_HEAD
+	
+NO: if both remote & local branches were changed Git applies 3-way merge, But if only remote branch was changed Git applies fast forward merge

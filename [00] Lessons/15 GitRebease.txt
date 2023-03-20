@@ -1,0 +1,8 @@
+git checkout feature1
+git rebease master
+git checkout master
+git merge feature1
+
+git push --force
+
+then delete the feature1 branch

@@ -1,0 +1,92 @@
+About The git Tutorial
+
+    create new file
+        cd /tmp
+        mkdir project
+        cd project
+        touch "indexpage.txt"
+
+    git init "NewGit" OR git init
+
+    Make a change
+    git status
+
+
+    git add "file.c" (-A) ("page*") -> go to stage level
+    git status
+
+
+    git commit -m 'massage'     ("What is that?!")
+
+
+    git log
+    git diff HEAD   (Know about the modifications)
+    git diff --staged
+    git reset "indexpage.txt"
+    fit checkout --  "indexpage.txt"
+
+    git branch  (Show all the branchs)
+    git branch "newbranch"   (Creating the branch)
+    git chechout "newbranch"  (Changing the branch)
+
+    git merge "newbranch"
+
+    git rm "indexpage.txt"  (from git & file systeam)
+
+    git branch -d "newbranch"   (delete the existing branch)
+
+
+
+
+
+About The git
+
+    git
+
+    cd\
+    e:
+    cd \Documents\WorkSpace\Git\git-test
+    cls
+
+    1) git init
+        git status
+
+        git config --global user.name "John Doe"
+        git config --global user.email johndoe@example.com
+
+
+        git config --list
+
+        copy con test.txt
+            F6
+
+        we have 2 kinda files:
+            Untracke Files: be see by the git but not save in commit
+            Tracked Files: be see by the git and saved in commit with the special circumestances
+
+        git add test*.txt (/source/*.*)
+
+        git status
+
+        git commit -m "initialite project"      (Take a snapshat)
+
+        git status
+
+        Untracked -> Staging -> Commit (snapshat) 
+
+        git status -s       (M=modify, ??=Untracked, M- test means all changes goning on stage and no new change in working space(git add text1.txt))
+            MM test means U add this file but modified it!
+        M = modified, R = renamed, A = add
+
+        copy con .gitignore
+            open it and write *.apk & .gitignore & /output & !/output/*.exe
+
+    2)  git clone
+        cd  exi-folder
+        git init
+        git remote add master http://...
+        git add .
+        git commit -m "First Place!"
+        git push -u master master
+		user: benyaminteymuri
+		Pass: 11fa9edfef4151529872358c9d2bd97a6b6cadbb

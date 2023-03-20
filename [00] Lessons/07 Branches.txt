@@ -1,0 +1,42 @@
+git branch => list of branch
+
+git branch <name> 
+don't use space +
+ls .git/refs/heads
+cat .git/refs/heads/master
+NO: Created new branch is based on the last comment on current branch 
+cat .git/HEAD
+
+git checkout <name> 
+checkout specific branch =
+git checkout -b <branch name> 
+shortcut for creating a branch and checkout
+
+git branch -d <name> 
+only for deleting merged branch (-D)
+git branch -m <old> <new> 
+rename
+
+Four different track instance of each file:
+-------------------
+- Untracked
+- Modified
+- Staged
+- Unmodified
+
+Untracked === git add ===> staged
+git add  .
+
+Staged === git commit ===> Unmodified
+git commit -m "MSG"
+git cat-file -p <hash>
+=> root commit hasn't any parent!!!
+
+Unmodified  === change in work dir ===> Modified
+
+
+Modified === git add ===> staged
+
+
+Unmodified  === Untrack ===> Untracked
+git rm --cached <filename>

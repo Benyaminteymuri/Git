@@ -1,0 +1,24 @@
+5.2.4-1.3 < 5.2.4-1.4 < 5.2.4
+Instead of number after dash can use Alpha or Beta or rc!
+
+git tags:
+Lightweight tags:
+git tag v1.0.0
+Stored in the .git/refs/tags
+it's not pushed to remote directory
+
+git tag
+git show V1.0.0
+git lg
+git tag -v V1.0.0
+
+Annotated: 
+git tag -a v1.0.0 -m "New Tag"
+Stored in the .git/refs/tags and also .git/objects
+stores tag massages + tag author and date
+
+NO: Tags must have unique names across repository
+
+git push -v --tag
+git push -v master V1.0.1
+the last one just push tags

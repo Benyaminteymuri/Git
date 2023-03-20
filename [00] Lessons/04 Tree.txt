@@ -1,0 +1,26 @@
+Pointer to specific tree 
+object in the DB
+Auth name & Email
+commit description
+<Parent>
+Its own SHA1 hash
+git config --global user.name "user"
+git config --global user.email <email>
+git config --list
+git commit -m "Massage"
+git cat-file -p <hash>
+git cat-file -s <hash>
+git cat-file -t <hash>
+find .git/objects -type f
+nano file3.txt
+ls -l
+git ls-files -s
+Status of staging area
+git status
+annotated tag ->
+echo "Hello" > file.txt
+
+git push
+==============
+git remote add master URL
+git push -u master main

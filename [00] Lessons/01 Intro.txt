@@ -1,0 +1,12 @@
+cd Desktop
+mkdir test
+cd test
+touch test.txt
+touch test2.txt
+ls -la
+clear
+start .
+explore .
+
+git init
+ls -la

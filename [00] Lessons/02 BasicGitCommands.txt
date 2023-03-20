@@ -1,0 +1,21 @@
+git init
+
+git status
+
+git add  .
+git add <filename>
+git ls-files
+
+git commit -m "Massage"
+
+git log
+
+git checkout <hash>
+
+git pull
+
+git push
+
+git fetch
+
+git clone

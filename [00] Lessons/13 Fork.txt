@@ -1,0 +1,22 @@
+In order to sync changes from parent repository to your local repository you need to add another server called upstream!
+
+git remote add <upstream> <upstream URL remote repository>
+git remote
+git remote -v
+
+git branch -a
+git fetch upstream -v
+git branch -a
+
+ls -la .git/refs/remotes
+ls -la .git/refs/remotes/upstream
+
+ls -la
+git branch -vv
+git pull upstream master -v
+
+
+ls -la
+
+git push
+git merge upstream/master -v

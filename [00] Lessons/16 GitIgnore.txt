@@ -1,0 +1,14 @@
+.gitignore
+
+examples:
+*.tem
+bin/
+node_modules/
+file.txt
+*.log
+Thumbs.db
+
+git rm --cached file.txt
+
+gitignore.io
+github.com/github/gitignoer

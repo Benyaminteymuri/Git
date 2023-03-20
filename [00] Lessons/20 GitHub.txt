@@ -1,0 +1,53 @@
+About the github
+
+    git clone https://github.com/jadijadi/titap_mystry.git
+
+    git push orgin master   (move every thting from master to master branch)
+        Username
+        Password
+
+    git pull orgin master   (move every thting from master to this master branch)
+
+    git remote add master https://github/test-report
+
+    git remote -v
+
+    git push -u master master
+
+    git show "ed6f892b68d0a933741..."
+
+    git tag -a v2.0 -m 'first version ever'     (on the Last Commit)
+    git tag -a v1.8 "ed6f8"
+    git show v1.8
+    git chechout v1.8
+
+    gpg --list-keys
+
+    gpg --gen-key
+        name
+        gmail
+        Password
+
+    git config --global user.name
+    git config --global user.signingkey
+
+    gpg --list-secret-keys --keyid-format LONG
+
+    git config --global-user.signingkey "300B2487BB55.."
+    git tag -s v1.8 "ed6f8"
+        Password
+
+    git commit -S -m 'massage'     ("What is that?!")
+        Password
+
+
+    git blame "filename.c" -L8 (,10)
+
+    git bisect star
+    git bisect bad
+    git log
+    git bisect good "1f13490b3..."
+    ...
+
+
+git --help "command"

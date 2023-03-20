@@ -1,0 +1,21 @@
+Using Digital ocean 
+Create Droplets
+Ubuntu 20.04
+
+In terminal:
+ssh root@IPADD
+inter pass and change it
+lsb-release -a
+ 
+sudo apt-get update
+sudo apt-get install git
+git version
+
+Install ZSH
+sudo apt install zsh
+chsh -s /bin/zsh 
+
+Install Oh My ZSH
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+bash

@@ -1,0 +1,14 @@
+git ls-files
+git ls-files -s
+git cat-file 3b95 -t
+git read-tree <hash>
+Working Directory
+-------------------
+ls
+git checkout-index -a
+ls -l
+cat file1.txt
+NO => 16*16 = 256 
+256 folders can create in objects
+commit -> Versions OR Snapshot: 
+structure is the same of Trees & blobs

@@ -1,0 +1,71 @@
+git log --oneline
+git log --graph --oneline
+git log --stat
+git log -p
+git log -4 --onelien
+
+git shortlog
+git shortlog -n
+git shortlog -n -s
+git shortlog -n -s -e
+
+git log --author="BEN"
+git log --author="BEN" --oneline
+git log --grep="3.12.1"
+git log --grep="3.12.1" --oneline
+
+git log --pretty=format:"%cn %H"
+https://denhints.io/git-log-format
+
+git log --pretty=format:"%cn %h"
+git log --pretty=format:"Author of commit: %cn; Commit SHA1 hash: %h"
+
+git log --merge --oneline
+git log --no-merge --oneline
+
+git reset --hard <SHA hash>
+Discard commit + changes in staging area + changes in working directory
+
+git reset --mixed <SHA hash>
+Discard commit + changes in staging area but keep changes in working directory
+
+git reset --soft <SHA hash>
+Discard commit But keep changes in staging area and changes in working directory
+
+git reset HEAD~5 
+
+git revert HEAD
+:wq
+
+git revert <SHA1 hash>
+code .
+git add .
+git revert --continue
+:wq
+
+git commit --amend -m "Massage"
+git commit --amend --author="BEN <Email>"
+:wq
+
+allow you fast and easy take commit from any others place, inserting to currently checkout branch
+git cherry-pick <SHA1 hash>
+git cherry-pick --no-commit <SHA1 hash>
+git status -v
+git show <SHA1 hash>
+
+git reflog
+git reflog show <branch>
+git checkout <SHA1 hash>
+git checkout HEAD@{5}
+moving between history using git reset --hard <SHA1 hash> and git reflog commands
+
+These recent commands are used only in local repository
+NO: operations in the reflog are stored by default 90 days
+
+Git stash
+NO: It used for go on other branch while the modifications is not committed yet!
+Git cat-file -t <SHA1 hash>
+Git stash pop
+Cat .git/refs/stash
+
+Git gc
